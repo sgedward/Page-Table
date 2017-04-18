@@ -1,0 +1,44 @@
+Input: ./VMsim 1024 8 4 3 
+
+Output:
+
+[Process 1] accesses address 1234 (page number = 1, page offset = 210) not in main memory.
+[Process 0] accesses address 1024 (page number = 1, page offset = 0) not in main memory.
+[Process 1] finds a free frame in main memory (frame number = 0).
+[Process 1] issues an I/O operation to swap in demanded page (page number = 1).
+[Process 1] demanded page (page number = 1) has been swapped in main memory (frame number = 0).
+[Process 0] finds a free frame in main memory (frame number = 1).
+[Process 0] issues an I/O operation to swap in demanded page (page number = 1).
+[Process 1] accesses address 1234 (page number = 1, page offset=210) in main memory (frame number = 0).
+[Process 1] accesses address 5953 (page number = 5, page offset = 833) not in main memory.
+[Process 0] demanded page (page number = 1) has been swapped in main memory (frame number = 1).
+[Process 1] finds a free frame in main memory (frame number = 2).
+[Process 1] issues an I/O operation to swap in demanded page (page number = 5).
+[Process 0] accesses address 1024 (page number = 1, page offset=0) in main memory (frame number = 1).
+[Process 0] accesses address 2547 (page number = 2, page offset = 499) not in main memory.
+[Process 1] demanded page (page number = 5) has been swapped in main memory (frame number = 2).
+[Process 0] finds a free frame in main memory (frame number = 3).
+[Process 0] issues an I/O operation to swap in demanded page (page number = 2).
+[Process 1] accesses address 5953 (page number = 5, page offset=833) in main memory (frame number = 2).
+[Process 1] accesses address 1253 (page number = 1, page offset=229) in main memory (frame number = 0).
+[process 1] address 8753 is invalid and so the user process terminates
+[Process 0] demanded page (page number = 2) has been swapped in main memory (frame number = 3).
+[Process 0] accesses address 2547 (page number = 2, page offset=499) in main memory (frame number = 3).
+[Process 0] accesses address 1347 (page number = 1, page offset=323) in main memory (frame number = 1).
+[Process 0] accesses address 3600 (page number = 3, page offset = 528) not in main memory.
+[Process 0] replaces a frame (frame number = 2) from the main memory.
+[Process 0] issues an I/O operation to swap in demanded page (page number = 3).
+[Process 0] demanded page (page number = 3) has been swapped in main memory (frame number = 2).
+[Process 0] accesses address 3600 (page number = 3, page offset=528) in main memory (frame number = 2).
+[Process 0] accesses address 7200 (page number = 7, page offset = 32) not in main memory.
+[Process 0] replaces a frame (frame number = 0) from the main memory.
+[Process 0] issues an I/O operation to swap in demanded page (page number = 7).
+[Process 0] demanded page (page number = 7) has been swapped in main memory (frame number = 0).
+[Process 0] accesses address 7200 (page number = 7, page offset=32) in main memory (frame number = 0).
+[Process 0] accesses address 3613 (page number = 3, page offset=541) in main memory (frame number = 2).
+[Process 0] accesses address 860 (page number = 0, page offset = 860) not in main memory.
+[Process 0] replaces a frame (frame number = 3) from the main memory.
+[Process 0] issues an I/O operation to swap in demanded page (page number = 0).
+[Process 0] demanded page (page number = 0) has been swapped in main memory (frame number = 3).
+[Process 0] accesses address 860 (page number = 0, page offset=860) in main memory (frame number = 3).
+[process 0] address 9827 is invalid and so the user process terminates
